@@ -41,6 +41,26 @@ p {
   width: 1440px;
 }
 
+.btn {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 40px;
+  color: #bdae82;
+  background-color: transparent;
+  border: 2px solid #bdae82;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn--primary {
+  color: #000000;
+  background-color: #bdae82;
+}
+
+.btn:hover {
+  color: #ffffff;
+}
+
 .header {
   display: flex;
 }
@@ -87,6 +107,7 @@ p {
   line-height: 50px;
   color: #ffffff;
   text-decoration: none;
+  transition: 0.5s;
 }
 
 .nav__link:hover {
@@ -104,6 +125,7 @@ p {
   line-height: 50px;
   color: #ffffff;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .language__input:checked + .language__item {
@@ -115,4 +137,32 @@ p {
   font-size: 20px;
   line-height: 50px;
   color: #ffffff;
+}
+
+.hero {
+  padding-top: 160px;
+  padding-bottom: 330px;
+  padding-left: 60px;
+  background: url('assets/img/header-bg.jpg') center -90px no-repeat;
+}
+
+.hero__title {
+  margin-bottom: 10px;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 120px;
+  color: #ffffff;
+}
+
+.hero__text {
+  margin-bottom: 25px;
+  width: 470px;
+  font-size: 20px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.hero__btn {
+  padding: 6px 72px 5px;
 }
