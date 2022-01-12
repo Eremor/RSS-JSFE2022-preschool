@@ -61,6 +61,44 @@ p {
   color: #ffffff;
 }
 
+.title-wrapper {
+  margin: 0 auto;
+  width: 50%;
+  overflow-x: hidden;
+}
+
+.section-title {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 80px;
+  text-align: center;
+  color: #bdae82;
+}
+
+.section-title--primary {
+  position: relative;
+}
+
+.section-title--primary::before,
+.section-title--primary::after {
+  content: "";
+  position: absolute;
+  top: 49%;
+  display: block;
+  width: 39%;
+  height: 2px;
+  background-color: #bdae82;
+}
+
+.section-title--primary::before {
+  left: 0;
+}
+
+.section-title--primary::after {
+  right: 0;
+}
+
 .header {
   display: flex;
 }
@@ -133,7 +171,7 @@ p {
 }
 
 .language__delimiter {
-  margin: 0 8px 0 9px;
+  margin: 0 10px 0 9px;
   font-size: 20px;
   line-height: 50px;
   color: #ffffff;
@@ -165,4 +203,58 @@ p {
 
 .hero__btn {
   padding: 6px 72px 5px;
+}
+
+.skills {
+  padding-top: 100px;
+}
+
+.skills__wrapper {
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills__item {
+  padding: 100px 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  background-position: center top;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.skills__item:nth-child(1) {
+  background-image: url('assets/img/camera-pic.png');
+}
+
+.skills__item:nth-child(2) {
+  background-image: url('assets/img/video-pic.png');
+}
+
+.skills__item:nth-child(3) {
+  background-image: url('assets/img/landscape-pic.png');
+}
+
+.skills__item:nth-child(4) {
+  background-image: url('assets/img/mic-pic.png');
+}
+
+.skill__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.skill__text {
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
 }
