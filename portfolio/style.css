@@ -46,6 +46,8 @@ p {
 }
 
 .btn {
+  width: 220px;
+  height: 55px;
   font-family: inherit;
   font-size: 20px;
   line-height: 40px;
@@ -192,10 +194,6 @@ p {
   color: #ffffff;
 }
 
-.hero__btn {
-  padding: 6px 72px 5px;
-}
-
 .skills {
   padding-top: 100px;
   padding-bottom: 10px;
@@ -263,11 +261,6 @@ p {
   gap: 5px;
 }
 
-.seasons__btn {
-  width: 220px;
-  height: 55px;
-}
-
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
@@ -303,8 +296,59 @@ p {
   background-size: cover;
   transform: translate(-50%, -50%);
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .video__btn:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.price {
+  margin-top: -3px;
+  padding-top: 100px;
+}
+
+.price__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  padding: 40px 0;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #bdae82;
+}
+
+.card__title {
+  margin-bottom: 20px;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 56px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.card__price {
+  margin-bottom: 20px;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: center;
+  color: #bdae82;
+}
+
+.card__description {
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.card__btn {
+  margin-top: 40px;
 }
