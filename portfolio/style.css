@@ -63,23 +63,29 @@ p {
 
 .title-wrapper {
   margin: 0 auto;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
   width: 50%;
   overflow-x: hidden;
+  background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
 }
 
 .section-title {
+  display: inline;
   font-family: 'Merriweather', serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 80px;
   text-align: center;
   color: #bdae82;
+  background-color: #000000;
 }
 
 .section-title--primary {
-  position: relative;
+  padding: 0 20px;
 }
-
+/*
 .section-title--primary::before,
 .section-title--primary::after {
   content: "";
@@ -97,7 +103,7 @@ p {
 
 .section-title--primary::after {
   right: 0;
-}
+} */
 
 .header {
   display: flex;
@@ -207,10 +213,10 @@ p {
 
 .skills {
   padding-top: 100px;
+  padding-bottom: 10px;
 }
 
 .skills__wrapper {
-  padding-top: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -257,4 +263,33 @@ p {
   line-height: 36px;
   text-align: center;
   color: #ffffff;
+}
+
+.portfolio {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seasons {
+  margin-bottom: 60px;
+  display: flex;
+  gap: 5px;
+}
+
+.seasons__btn {
+  width: 220px;
+  height: 55px;
+}
+
+.portfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.portfolio__item {
+  width: 450px;
+  height: 560px;
 }
