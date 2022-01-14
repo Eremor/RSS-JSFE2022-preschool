@@ -412,3 +412,62 @@ p {
   height: 100px;
   resize: none;
 }
+
+.footer {
+  padding: 50px 0;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__text {
+  font-size: 20px;
+  line-height: 50px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__text--year {
+  margin: 0 18px;
+}
+
+.footer__text--course {
+  margin-left: 57px;
+}
+
+.social__list {
+  display: flex;
+}
+
+.social__item {
+  margin-right: 20px;
+  width: 32px;
+  height: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.social__item:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.social__item:first-child {
+  background: url('assets/svg/instagram.svg');
+}
+
+.social__item:nth-child(2) {
+  background: url('assets/svg/facebook.svg');
+}
+
+.social__item:nth-child(3) {
+  background: url('assets/svg/twitter.svg');
+}
+
+.social__item:last-child {
+  margin-right: 0;
+  background: url('assets/svg/pinterest.svg');
+}

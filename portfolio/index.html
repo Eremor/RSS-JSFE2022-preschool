@@ -145,17 +145,28 @@
       <div class="contacts__wrapper">
         <h2 class="section-title section-title--transparent">Contact me</h2>
         <form class="contacts__form" method="post">
-          <input class="contacts__item contacts__email" type="email" name="email" placeholder="E-mail">
-          <input class="contacts__item contacts__tel" type="tel" name="tel" placeholder="Phone">
-          <textarea class="contacts__item contacts__message" name="message" placeholder="Message"></textarea>
+          <input class="contacts__item contacts__email" type="email" name="email" placeholder="E-mail" required>
+          <input class="contacts__item contacts__tel" type="tel" name="tel" placeholder="Phone" required>
+          <textarea class="contacts__item contacts__message" name="message" placeholder="Message" required></textarea>
           <button class="contacts__btn btn btn--primary">Send message</button>
         </form>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="wrapper">
-
+    <div class="wrapper footer__wrapper">
+      <div class="footer__copyright">
+        <span class="footer__text">&copy;</span>
+        <span class="footer__text footer__text--year">2022</span>
+        <a class="footer__text" href="https://github.com/Eremor">github</a>
+      </div>
+      <a class="footer__text footer__text--course" href="https://rs.school/js-stage0/">Rolling Scopes School</a>
+      <ul class="social__list">
+        <li class="social__item"><span class="visually-hidden">Instagram</span></li>
+        <li class="social__item"><span class="visually-hidden">Facebook</span></li>
+        <li class="social__item"><span class="visually-hidden">Twitter</span></li>
+        <li class="social__item"><span class="visually-hidden">Pinterest</span></li>
+      </ul>
     </div>
   </footer>
 </body>
