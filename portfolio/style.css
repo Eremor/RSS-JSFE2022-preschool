@@ -88,6 +88,12 @@ p {
   background-color: #000000;
 }
 
+.section-title--transparent {
+  width: 450px;
+  text-align: left;
+  background-color: transparent;
+}
+
 .section-title--primary {
   padding: 0 20px;
 }
@@ -306,6 +312,7 @@ p {
 .price {
   margin-top: -3px;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .price__list {
@@ -351,4 +358,57 @@ p {
 
 .card__btn {
   margin-top: 40px;
+}
+
+.contacts {
+  padding-top: 60px;
+  padding-bottom: 195px;
+  display: flex;
+  justify-content: flex-end;
+  background: url('assets/img/contacts-bg.jpg') no-repeat;
+  background-size: auto 700px;
+  background-position: center center;
+}
+
+.contacts__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contacts__form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__item {
+  margin-bottom: 20px;
+  padding: 3px 20px;
+  width: 450px;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 40px;
+  color: #bdae82;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #bdae82;
+}
+
+.contacts__item:nth-child(3) {
+  margin-bottom: 30px;
+}
+
+.contacts__item::placeholder {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 40px;
+  color: #bdae82;
+}
+
+.contacts__message {
+  height: 100px;
+  resize: none;
 }
