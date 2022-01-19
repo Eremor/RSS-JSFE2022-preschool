@@ -176,6 +176,10 @@ p {
   color: #ffffff;
 }
 
+.hamburger {
+  display: none;
+}
+
 .hero {
   padding-top: 160px;
   padding-bottom: 330px;
@@ -264,6 +268,7 @@ p {
 .seasons {
   margin-bottom: 60px;
   display: flex;
+  flex-wrap: wrap;
   gap: 5px;
 }
 
@@ -317,6 +322,7 @@ p {
 
 .price__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -470,4 +476,112 @@ p {
 .social__item:last-child {
   margin-right: 0;
   background: url('assets/svg/pinterest.svg');
+}
+
+@media (max-width: 1457px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .portfolio__list {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 1439px) {
+
+  .wrapper {
+    padding: 0;
+  }
+  
+  .header {
+    position: relative;
+  }
+  
+  .header__wrapper {
+    padding: 0 60px;
+  }
+
+  .nav {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: calc(-100% - 148px);
+    padding-top: 134px;
+    padding-left: 127px;
+    width: calc(100% - 148px);
+    height: 100vh;
+    background-color: #000000;
+    z-index: 2;
+    transition: 0.5s;
+  }
+
+  .nav--open {
+    display: block;
+    right: 0;
+    transition: 0.5s;
+  }
+
+  .nav__list {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .nav__link {
+    font-size: 35px;
+    line-height: 74px;
+  }
+
+  .language {
+    margin-left: auto;
+  }
+
+  .language__delimiter {
+    margin-right: 20px;
+  }
+
+  .hamburger {
+    margin: 0;
+    margin-left: 25px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .hamburger__line {
+    width: 50px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  .hamburger:hover .hamburger__line {
+    background-color: #bdae82;
+  }
+
+  .hamburger--open {
+    justify-content: center;
+  }
+
+  .hamburger--open .hamburger__line:first-child {
+    width: 45px;
+    transform: rotate(45deg) translateX(6%);
+  }
+
+  .hamburger--open .hamburger__line:nth-child(2) {
+    width: 45px;
+    transform: rotate(-45deg) translateX(3%);
+  }
+
+  .hamburger--open .hamburger__line:last-child {
+    display: none;
+  }
 }
