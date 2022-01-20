@@ -500,6 +500,7 @@ p {
   }
 
   .title-wrapper {
+    width: 364px;
     background-image: linear-gradient(to top, #000 20px, #bdae82 20px, #bdae82 22px, #000 22px);
   }
 
@@ -647,5 +648,20 @@ p {
 
   .skills__item:last-child .skill__text {
     padding: 0 10px;
+  }
+
+  .portfolio {
+    
+  }
+
+  .seasons {
+    margin-top: 10px;
+    justify-content: center;
+    max-width: 445px;
+  }
+
+  .portfolio__list {
+    flex-direction: column;
+    gap: 25px;
   }
 }
