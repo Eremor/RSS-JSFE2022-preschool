@@ -689,4 +689,27 @@ p {
     margin-bottom: 50px;
     width: 420px;
   }
+
+  .contacts {
+    padding-top: 72px;
+    padding-bottom: 110px;
+    background-position: -233px 0px;
+    background-size: auto 600px;
+  }
+
+  .contacts__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-title--transparent {
+    text-align: center;
+  }
+
+  .contacts__form {
+    margin-top: 52px;
+    align-items: center;
+  }
 }
