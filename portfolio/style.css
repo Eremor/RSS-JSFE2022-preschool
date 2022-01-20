@@ -675,4 +675,18 @@ p {
     width: 65px;
     height: 65px;
   }
+
+  .price {
+    padding-bottom: 30px;
+  }
+
+  .price__list {
+    padding-top: 10px;
+    justify-content: center;
+  }
+
+  .card {
+    margin-bottom: 50px;
+    width: 420px;
+  }
 }
