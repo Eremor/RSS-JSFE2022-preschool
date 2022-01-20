@@ -712,4 +712,29 @@ p {
     margin-top: 52px;
     align-items: center;
   }
+
+  .footer {
+    padding-top: 29px;
+    padding-bottom: 28px;
+  }
+
+  .footer__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__text {
+    line-height: 24px;
+  }
+
+  .footer__text--course {
+    margin-top: 16px;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .social__list {
+    margin: 0;
+    padding: 0;
+  }
 }
