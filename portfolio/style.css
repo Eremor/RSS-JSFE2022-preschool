@@ -650,10 +650,6 @@ p {
     padding: 0 10px;
   }
 
-  .portfolio {
-    
-  }
-
   .seasons {
     margin-top: 10px;
     justify-content: center;
@@ -663,5 +659,20 @@ p {
   .portfolio__list {
     flex-direction: column;
     gap: 25px;
+  }
+
+  .video__player {
+    padding-top: 10px;
+    overflow: hidden;
+  }
+
+  .video__img {
+    width: 105%;
+    height: 418px;
+  }
+
+  .video__btn {
+    width: 65px;
+    height: 65px;
   }
 }
