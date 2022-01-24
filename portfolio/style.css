@@ -738,3 +738,75 @@ p {
     padding: 0;
   }
 }
+
+@media (max-width: 616px) {
+  .skills__wrapper {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 466px) {
+  .title-wrapper {
+    width: 90%;
+  }
+
+  .section-title--transparent {
+    width: 100%;
+  }
+
+  .header__wrapper {
+    background-position: -212px -29px;
+  }
+
+  .hero {
+    background-position: -210px -120px;
+  }
+
+  .hero__text {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .portfolio__item {
+    width: 100%;
+    height: 100%;
+  }
+
+  .video__img {
+    height: 100%;
+  }
+
+  .card {
+    width: 320px;
+  }
+
+  .contacts__item {
+    width: 300px;
+  }
+}
+
+@media (max-width: 350px) {
+  .header__wrapper {
+    padding: 0 20px;
+    background-position-x: -342px;
+  }
+
+  .language__input {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .hamburger {
+    width: 30px;
+    height: 30px;
+  }
+
+  .hamburger__line {
+    width: 30px;
+  }
+
+  .hero {
+    padding-left: 20px;
+    background-position-x: -340px;
+  }
+}
