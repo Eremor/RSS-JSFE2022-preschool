@@ -37,13 +37,12 @@
           </li>
         </ul>
       </nav>
-      <form class="language">
-        <input class="language__input visually-hidden" type="radio" name="language__switcher" id="language1" checked>
-        <label class="language__item" for="language1">en</label>
-        <span class="language__delimiter">/</span>
-        <input class="language__input visually-hidden" type="radio" name="language__switcher" id="language2">
-        <label class="language__item" for="language2">ru</label>
-      </form>
+      <div class="language">
+        <span class="language__item language__item--active">en</span>
+        <span class="language__line">/</span>
+        <span class="language__item">ru</span>
+      </div>
+      <button class="theme-btn"><span class="visually-hidden">theme toggle</span></button>
       <button class="hamburger">
         <span class="hamburger__line"></span>
         <span class="hamburger__line"></span>
@@ -52,13 +51,15 @@
     </div>
   </header>
   <main class="main">
-    <div class="wrapper">
-      <section class="hero">
+    <section class="hero">
+      <div class="wrapper hero__wrapper">
         <h1 class="hero__title">Alexa Rise</h1>
         <p class="hero__text">Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</p>
         <button class="btn btn--primary hero__btn">Hire me</button>
-      </section>
-      <section class="skills" id="skills">
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="wrapper skills__wrapper">
         <div class="title-wrapper">
           <h2 class="section-title section-title--primary">Skills</h2>
         </div>
@@ -80,8 +81,10 @@
             <p class="skill__text">Professional sounds recording for video, advertising, portfolio</p>
           </div>
         </div>
-      </section>
-      <section class="portfolio" id="portfolio">
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="wrapper portfolio__wrapper">
         <div class="title-wrapper">
           <h2 class="section-title section-title--primary">Portfolio</h2>
         </div>
@@ -99,8 +102,10 @@
           <img class="portfolio__item" src="assets/img/portfolio-img-5.jpg" alt="Portfolio work" width="450" height="560">
           <img class="portfolio__item" src="assets/img/portfolio-img-6.jpg" alt="Portfolio work" width="450" height="560">
         </div>
-      </section>
-      <section class="video" id="video">
+      </div>
+    </section>
+    <section class="video" id="video">
+      <div class="wrapper video__wrapper">
         <div class="title-wrapper">
           <h2 class="section-title section-title--primary">Video</h2>
         </div>
@@ -108,8 +113,10 @@
           <img class="video__img" src="assets/img/video-player.jpg" alt="Video" width="1400" height="705">
           <button class="video__btn"></button>
         </div>
-      </section>
-      <section class="price" id="price">
+      </div>
+    </section>
+    <section class="price" id="price">
+      <div class="wrapper price__wrapper">
         <div class="title-wrapper">
           <h2 class="section-title section-title--primary">Price</h2>
         </div>
@@ -145,10 +152,10 @@
             <button class="card__btn btn btn--primary">Order shooting</button>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
     <section class="contacts" id="contacts">
-      <div class="contacts__wrapper">
+      <div class="wrapper contacts__wrapper">
         <h2 class="section-title section-title--transparent">Contact me</h2>
         <form class="contacts__form" method="post">
           <input class="contacts__item contacts__email" type="email" name="email" placeholder="E-mail" required>
