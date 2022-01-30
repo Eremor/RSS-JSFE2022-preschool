@@ -141,6 +141,10 @@ a {
   padding: 0 20px;
 }
 
+.header {
+  background-color: var(--body-color);
+}
+
 .header__wrapper {
   padding: 20px;
   display: -webkit-box;
@@ -375,6 +379,10 @@ a {
   width: 45px;
   -webkit-transform: rotate(-45deg) translateX(5px);
           transform: rotate(-45deg) translateX(5px);
+}
+
+.hero {
+  background-color: var(--body-color);
 }
 
 .hero__wrapper {
@@ -734,6 +742,10 @@ a {
   margin-top: 40px;
 }
 
+.contacts {
+  background-color: var(--body-color);
+}
+
 .contacts__wrapper {
   padding-top: 60px;
   padding-bottom: 195px;
@@ -847,6 +859,7 @@ a {
 
 .footer {
   padding: 50px 0;
+  background-color: var(--body-color);
 }
 
 @media (max-width: 768px) {

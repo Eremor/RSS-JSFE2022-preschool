@@ -129,6 +129,7 @@ a {
 }
 
 .header {
+  background-color: var(--body-color);
 
   &__wrapper {
     padding: 20px;
@@ -321,6 +322,7 @@ a {
 }
 
 .hero {
+  background-color: var(--body-color);
   
   &__wrapper {
     padding-top: 160px;
@@ -615,6 +617,7 @@ a {
 }
 
 .contacts {
+  background-color: var(--body-color);
   
   &__wrapper {
     padding-top: 60px;
@@ -685,6 +688,7 @@ a {
 
 .footer {
   padding: 50px 0;
+  background-color: var(--body-color);
 
   @media (max-width: 768px) {
     padding: 30px 0;
