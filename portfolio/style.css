@@ -293,8 +293,11 @@ a {
   padding: 0;
   width: 45px;
   height: 45px;
-  background: url("assets/svg/sun-icon.svg") center no-repeat;
-  background-size: cover;
+  background-image: url("assets/svg/sun-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
   border: none;
   cursor: pointer;
 }
@@ -308,6 +311,10 @@ a {
 .theme-btn:hover {
   -webkit-filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
           filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.theme-btn--light {
+  background-image: url("assets/svg/moon-icon.svg");
 }
 
 .hamburger {
@@ -963,5 +970,31 @@ a {
 .social__item:last-child {
   margin-right: 0;
   background: url("assets/svg/pinterest.svg");
+}
+
+.light-theme {
+  background-color: var(--text-color);
+}
+
+.light-theme--text {
+  color: var(--body-color);
+}
+
+.light-theme--btn {
+  color: var(--body-color);
+}
+
+.light-theme--btn:hover {
+  background-color: var(--primary-color);
+}
+
+.light-theme--line {
+  background-image: linear-gradient(to top, #fff 39px, #000 39px, #000 41px, #fff 41px);
+}
+
+@media (max-width: 768px) {
+  .light-theme--line {
+    background-image: linear-gradient(to top, #fff 20px, #000 20px, #000 22px, #fff 22px);
+  }
 }
 /*# sourceMappingURL=style.css.map */

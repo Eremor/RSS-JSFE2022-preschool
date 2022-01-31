@@ -253,8 +253,11 @@ a {
   padding: 0;
   width: 45px;
   height: 45px;
-  background: url('assets/svg/sun-icon.svg') center no-repeat;
-  background-size: cover;
+  background-image: url('assets/svg/sun-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
   border: none;
   cursor: pointer;
 
@@ -264,6 +267,10 @@ a {
 
   &:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+  }
+
+  &--light {
+    background-image: url('assets/svg/moon-icon.svg');
   }
 }
 
@@ -767,6 +774,30 @@ a {
     &:last-child {
       margin-right: 0;
       background: url('assets/svg/pinterest.svg');
+    }
+  }
+}
+
+.light-theme {
+  background-color: var(--text-color);
+
+  &--text {
+    color: var(--body-color);
+  }
+
+  &--btn {
+    color: var(--body-color);
+
+    &:hover {
+      background-color: var(--primary-color);
+    }
+  }
+
+  &--line {
+    background-image: linear-gradient(to top, #fff 39px, #000 39px, #000 41px, #fff 41px);
+
+    @media (max-width: 768px) {
+      background-image: linear-gradient(to top, #fff 20px, #000 20px, #000 22px, #fff 22px);
     }
   }
 }
