@@ -1,11 +1,16 @@
+import i18Obj from "./translate.js";
 const burger = document.querySelector('.hamburger');
 const navigation = document.querySelector('.nav');
+const language = document.querySelector('.language');
+const languageButtons = language.querySelectorAll('.language__item');
 const themeBtn = document.querySelector('.theme-btn');
 const seasons = document.querySelector('.seasons');
 const portfolioButtons = seasons.querySelectorAll('.seasons__btn');
 const portfolioImages = document.querySelectorAll('.portfolio__item');
+const translateText = document.querySelectorAll('[data-i18]');
 
 let theme = false;
+let lang = 'en';
 
 const openMenu = () => {
   burger.classList.toggle('hamburger--open');
@@ -93,8 +98,26 @@ const changeImage = (event) => {
   }
 }
 
+const setTranslate = (lang) => {
+  translateText.forEach(el => {
+    const data = el.dataset.i18;
+    el.textContent = i18Obj[lang][data];
+  })
+}
+
+const onChangeLanguage = (event) => {
+  if(event.target.classList.contains('language__item')) {
+    if(!event.target.classList.contains('language__item--active')) {
+      languageButtons.forEach(button => button.classList.toggle('language__item--active'));
+      lang = event.target.dataset.lang
+      setTranslate(lang);
+    }
+  }
+}
+
 const setLocalStorage = () => {
   localStorage.setItem('theme', theme);
+  localStorage.setItem('lang', lang);
 }
 
 const getLocalStorage = () => {
@@ -104,16 +127,29 @@ const getLocalStorage = () => {
 
     changeTheme(theme);
   }
+
+  if(localStorage.getItem('lang')) {
+    const lang = localStorage.getItem('lang');
+    setTranslate(lang);
+
+    languageButtons.forEach(btn => {
+      btn.classList.remove('language__item--active')
+      if(btn.dataset.lang == lang) {
+        btn.classList.add('language__item--active')
+      }
+    });
+  }
 }
 
-burger.addEventListener('click', () => openMenu());
+burger.addEventListener('click', openMenu);
 navigation.addEventListener('click', (e) => {
   if(e.target.classList == 'nav__link') {
     openMenu();
   }
 });
+language.addEventListener('click', onChangeLanguage)
 themeBtn.addEventListener('click', onChangeTheme)
-seasons.addEventListener('click', (e) => changeImage(e))
+seasons.addEventListener('click', changeImage)
 
 window.addEventListener('beforeunload', setLocalStorage)
 window.addEventListener('load', getLocalStorage)

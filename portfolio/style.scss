@@ -253,7 +253,7 @@ a {
   padding: 0;
   width: 45px;
   height: 45px;
-  background-image: url('assets/svg/sun-icon.svg');
+  background-image: url('assets/svg/moon-icon.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -270,7 +270,7 @@ a {
   }
 
   &--light {
-    background-image: url('assets/svg/moon-icon.svg');
+    background-image: url('assets/svg/sun-icon.svg');
   }
 }
 
