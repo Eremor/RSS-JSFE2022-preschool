@@ -129,7 +129,7 @@ const getLocalStorage = () => {
   }
 
   if(localStorage.getItem('lang')) {
-    const lang = localStorage.getItem('lang');
+    lang = localStorage.getItem('lang');
     setTranslate(lang);
 
     languageButtons.forEach(btn => {
