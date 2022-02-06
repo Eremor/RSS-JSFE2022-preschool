@@ -19,7 +19,14 @@
           <h2 class="section-title section-title--primary" data-i18="video">Video</h2>
         </div>
         <div class="video__player">
-          <img class="video__img" src="assets/img/video-player.jpg" alt="Video" width="1400" height="705">
+          <img class="video__poster" src="assets/img/video-player.jpg" alt="Video" width="1400" height="705">
+          <video class="video__item visually-hidden" src="assets/video/video.mp4"></video>
+          <div class="video__controls visually-hidden">
+            <button class="video__play-btn video__play-btn--play"></button>
+            <input class="video__progress" type="range" min="0" max="100" step="1" value="0">
+            <button class="video__volume-btn"></button>
+            <input class="video__volume" type="range" min="0" max="100" step="1" value="40">
+          </div>
           <button class="video__btn"></button>
         </div>
       </div>
@@ -30,9 +37,10 @@
       <div class="footer__copyright">
         <span class="footer__text">&copy;</span>
         <span class="footer__text footer__text--year">2022</span>
-        <a class="footer__text" href="https://github.com/Eremor">github</a>
+        <a class="footer__text footer__text--link" href="https://github.com/Eremor">github</a>
       </div>
       <a class="footer__text footer__text--course" href="https://rs.school/js-stage0/">Rolling Scopes School</a>
   </footer>
+  <script src="intex.js"></script>
 </body>
 </html>
