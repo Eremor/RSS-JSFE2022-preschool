@@ -178,12 +178,14 @@ a {
     margin: 0;
     width: calc(80% - 160px);
     height: 10px;
+    background-size: 0% 100%;
   }
 
   &__volume {
     margin: 0;
     width: calc(20% - 40px);
     height: 10px;
+    background-size: 40% 100%;
   }
 
   &__play-btn {
@@ -220,6 +222,68 @@ a {
     &--mute {
       background-image: url('assets/svg/mute.svg');
     }
+  }
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  background-color: #c0c0c0;
+  background-image: linear-gradient(var(--primary-color), var(--primary-color));
+  background-repeat: no-repeat;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    background: transparent;
+  }
+
+  &::-moz-range-track {
+    width: 100%;
+    height: 10px;
+    background: transparent;
+  }
+
+  &::-ms-track {
+    width: 100%;
+    height: 10px;
+    background: transparent;
+  }
+
+  &::-ms-thumb {
+    -webkit-appearance: none;
+    position: relative;
+    top: -2px;
+    width: 15px;
+    height: 15px;
+    background: var(--text-color);
+    border-radius: 50%;
+    cursor: ew-resize;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    position: relative;
+    top: -2px;
+    width: 15px;
+    height: 15px;
+    background: var(--text-color);
+    border-radius: 50%;
+    cursor: ew-resize;
+  }
+
+  &::-moz-range-thumb {
+    -webkit-appearance: none;
+    position: relative;
+    top: -2px;
+    width: 15px;
+    height: 15px;
+    background: var(--text-color);
+    border-radius: 50%;
+    cursor: ew-resize;
   }
 }
 
