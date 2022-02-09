@@ -99,6 +99,6 @@ playBtn.addEventListener('click', handlerVideo);
 startBtn.addEventListener('click', startVideo);
 video.addEventListener('click', handlerVideo);
 video.addEventListener('timeupdate', updateTimeline);
-timeline.addEventListener('change', handlerTimeline);
+timeline.addEventListener('input', handlerTimeline);
 volumeBtn.addEventListener('click', mutedVolume);
-volumeBar.addEventListener('change', handlerVolume);
+volumeBar.addEventListener('input', handlerVolume);
