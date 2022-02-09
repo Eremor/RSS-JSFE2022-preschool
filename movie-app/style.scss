@@ -1,0 +1,147 @@
+:root {
+  --body-color: #ffffff;
+  --text-color: #000000;
+  --text-color-light: #ffffff;
+  --text-gradient: linear-gradient(to right, #c0fecf 0%, #1ed5a9 100%);
+  --primary-color: #032541;
+  --accent-color: #1ed5a9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--body-color);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  font-family: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.btn {
+  padding: 0;
+  font-family: inherit;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.header {
+  background-color: var(--primary-color);
+
+  &__wrapper {
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.search {
+  position: relative;
+  width: 80%;
+
+  &__query {
+    padding: 5px 30px;
+    padding-right: 10%;
+    width: 100%;
+    font-size: 1.2rem;
+    color: var(--text-color-light);
+    background-color: #0d2f4a;
+    border: 2px solid var(--accent-color);
+    border-radius: 20px;
+    outline: none;
+    transition: 0.5s;
+    
+    &::placeholder {
+      letter-spacing: 0.8px;
+      color: var(--accent-color);
+    }
+
+    &:focus {
+      background-color: #133755;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 7px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    background-image: url('assets/svg/search.svg');
+    filter: invert(64%) sepia(46%) saturate(640%) hue-rotate(115deg) brightness(95%) contrast(99%);
+
+    &:hover {
+      filter: invert(44%) sepia(62%) saturate(617%) hue-rotate(146deg) brightness(100%) contrast(86%);
+    }
+  }
+
+  &__cancel {
+    position: absolute;
+    top: 12px;
+    right: 55px;
+    width: 20px;
+    height: 20px;
+    background-image: url('assets/svg/cancel.svg');
+    filter: invert(69%) sepia(40%) saturate(1042%) hue-rotate(298deg) brightness(90%) contrast(109%);
+
+    &:hover {
+      filter: invert(42%) sepia(30%) saturate(1952%) hue-rotate(304deg) brightness(87%) contrast(97%)
+    }
+  }
+}
