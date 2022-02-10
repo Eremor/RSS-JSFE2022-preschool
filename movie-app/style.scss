@@ -85,7 +85,7 @@ input {
   background-color: var(--primary-color);
 
   &__wrapper {
-    padding: 25px 0;
+    padding: 25px 20px;
     display: flex;
     justify-content: center;
   }
@@ -142,6 +142,78 @@ input {
 
     &:hover {
       filter: invert(42%) sepia(30%) saturate(1952%) hue-rotate(304deg) brightness(87%) contrast(97%)
+    }
+  }
+}
+
+.main {
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+  }
+}
+
+.footer {
+  background-color: var(--primary-color);
+
+  &__wrapper {
+    padding: 25px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__github {
+    padding-left: 45px;
+    display: block;
+    width: 120px;
+    height: 45px;
+    font-size: 16px;
+    line-height: 45px;
+    text-decoration: none;
+    color: var(--text-color-light);
+    background-image: url('assets/svg/github.svg');
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    transition: 0.3s;
+
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+
+  &__year {
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    font-size: 21px;
+    letter-spacing: -2px;
+    color: #ffffff;
+    line-height: 0.9;
+    font-weight: bold;
+    transition: 0.3s;
+    filter: invert(180%);
+  }
+
+  &__rss {
+    display: block;
+    position: relative;
+    width: 86px;
+    height: 32px;
+    background-image: url('assets/svg/rs_school_js.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-right: 111px;
+    filter: invert(180%);
+
+    &:hover .footer__year {
+      right: -5px;
+      letter-spacing: 0;
     }
   }
 }

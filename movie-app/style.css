@@ -90,7 +90,7 @@ input {
 }
 
 .header__wrapper {
-  padding: 25px 0;
+  padding: 25px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,5 +172,91 @@ input {
 .search__cancel:hover {
   -webkit-filter: invert(42%) sepia(30%) saturate(1952%) hue-rotate(304deg) brightness(87%) contrast(97%);
           filter: invert(42%) sepia(30%) saturate(1952%) hue-rotate(304deg) brightness(87%) contrast(97%);
+}
+
+.main__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+}
+
+.footer {
+  background-color: var(--primary-color);
+}
+
+.footer__wrapper {
+  padding: 25px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__github {
+  padding-left: 45px;
+  display: block;
+  width: 120px;
+  height: 45px;
+  font-size: 16px;
+  line-height: 45px;
+  text-decoration: none;
+  color: var(--text-color-light);
+  background-image: url("assets/svg/github.svg");
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer__github:hover {
+  color: var(--accent-color);
+}
+
+.footer__year {
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  font-size: 21px;
+  letter-spacing: -2px;
+  color: #ffffff;
+  line-height: 0.9;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-filter: invert(180%);
+          filter: invert(180%);
+}
+
+.footer__rss {
+  display: block;
+  position: relative;
+  width: 86px;
+  height: 32px;
+  background-image: url("assets/svg/rs_school_js.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-right: 111px;
+  -webkit-filter: invert(180%);
+          filter: invert(180%);
+}
+
+.footer__rss:hover .footer__year {
+  right: -5px;
+  letter-spacing: 0;
 }
 /*# sourceMappingURL=style.css.map */
