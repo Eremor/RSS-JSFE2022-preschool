@@ -98,6 +98,10 @@ input {
   position: relative;
   width: 80%;
 
+  @media (max-width: 530px) {
+    width: 100%;
+  }
+
   &__query {
     padding: 5px 30px;
     padding-right: 10%;
@@ -118,6 +122,15 @@ input {
     &:focus {
       background-color: #133755;
     }
+
+    @media (max-width: 620px) {
+      padding-left: 10px;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 520px) {
+      font-size: 0.8rem;
+    }
   }
 
   &__btn {
@@ -132,6 +145,16 @@ input {
     &:hover {
       filter: invert(44%) sepia(62%) saturate(617%) hue-rotate(146deg) brightness(100%) contrast(86%);
     }
+
+    @media (max-width: 620px) {
+      top: 5px;
+      right: 10px;
+    }
+
+    @media (max-width: 520px) {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   &__cancel {
@@ -145,6 +168,18 @@ input {
 
     &:hover {
       filter: invert(42%) sepia(30%) saturate(1952%) hue-rotate(304deg) brightness(87%) contrast(97%)
+    }
+
+    @media (max-width: 620px) {
+      top: 10px;
+      right: 50px;
+    }
+
+    @media (max-width: 520px) {
+      top: 9px;
+      right: 40px;
+      width: 13px;
+      height: 13px;
     }
   }
 }
@@ -167,11 +202,20 @@ input {
   display: flex;
   align-items: center;
 
+  @media (max-width: 510px) {
+    flex-direction: column;
+    margin-right: 5%;
+  }
+
   &__title {
     margin-right: 20px;
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 700;
+
+    @media (max-width: 510px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__list {
@@ -204,6 +248,10 @@ input {
   flex-wrap: wrap;
   gap: 20px;
   width: 100%;
+
+  @media (max-width: 920px) {
+    justify-content: center;
+  }
 }
 
 .card {
@@ -227,6 +275,7 @@ input {
   &__img {
     width: 100%;
     height: calc(200px * 1.5);
+    background-color: #9b9b9b;
     border-radius: 10px;
     transition: 0.5s;
   }

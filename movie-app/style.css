@@ -107,6 +107,12 @@ input {
   width: 80%;
 }
 
+@media (max-width: 530px) {
+  .search {
+    width: 100%;
+  }
+}
+
 .search__query {
   padding: 5px 30px;
   padding-right: 10%;
@@ -145,6 +151,19 @@ input {
   background-color: #133755;
 }
 
+@media (max-width: 620px) {
+  .search__query {
+    padding-left: 10px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .search__query {
+    font-size: 0.8rem;
+  }
+}
+
 .search__btn {
   position: absolute;
   top: 7px;
@@ -161,6 +180,20 @@ input {
           filter: invert(44%) sepia(62%) saturate(617%) hue-rotate(146deg) brightness(100%) contrast(86%);
 }
 
+@media (max-width: 620px) {
+  .search__btn {
+    top: 5px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .search__btn {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 .search__cancel {
   position: absolute;
   top: 12px;
@@ -175,6 +208,22 @@ input {
 .search__cancel:hover {
   -webkit-filter: invert(42%) sepia(30%) saturate(1952%) hue-rotate(304deg) brightness(87%) contrast(97%);
           filter: invert(42%) sepia(30%) saturate(1952%) hue-rotate(304deg) brightness(87%) contrast(97%);
+}
+
+@media (max-width: 620px) {
+  .search__cancel {
+    top: 10px;
+    right: 50px;
+  }
+}
+
+@media (max-width: 520px) {
+  .search__cancel {
+    top: 9px;
+    right: 40px;
+    width: 13px;
+    height: 13px;
+  }
 }
 
 .main__wrapper {
@@ -204,11 +253,27 @@ input {
           align-items: center;
 }
 
+@media (max-width: 510px) {
+  .popular {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 5%;
+  }
+}
+
 .popular__title {
   margin-right: 20px;
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
+}
+
+@media (max-width: 510px) {
+  .popular__title {
+    margin-bottom: 10px;
+  }
 }
 
 .popular__list {
@@ -250,6 +315,14 @@ input {
   width: 100%;
 }
 
+@media (max-width: 920px) {
+  .card-field {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .card {
   position: relative;
   display: -webkit-box;
@@ -280,6 +353,7 @@ input {
 .card__img {
   width: 100%;
   height: calc(200px * 1.5);
+  background-color: #9b9b9b;
   border-radius: 10px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
