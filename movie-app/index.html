@@ -15,7 +15,7 @@
     <div class="header__wrapper wrapper">
       <form class="search">
         <input class="search__query" type="text" placeholder="Search for a movie or TV show.....">
-        <button class="search__cancel btn"></button>
+        <button class="search__cancel btn visually-hidden"></button>
         <button class="search__btn btn" type="submit"></button>
       </form>
     </div>
@@ -26,8 +26,8 @@
       <div class="popular">
         <p class="popular__title">What&apos;s popular</p>
         <ul class="popular__list">
-          <li class="popular__item popular__item--active">Movies</li>
-          <li class="popular__item">TV shows</li>
+          <li class="popular__item popular__item--active" data-category="movie">Movies</li>
+          <li class="popular__item" data-category="tv">TV shows</li>
           <!-- <li class="popular__item">Persons</li> -->
         </ul>
       </div>
@@ -297,6 +297,6 @@
       </div>
     </div>
   </div>
-  <script src="assets/main.js"></script>
+  <script type="module" src="assets/main.js"></script>
 </body>
 </html>
