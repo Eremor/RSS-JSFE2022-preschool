@@ -1,9 +1,22 @@
-import {getPopular} from './services/api.js';
+import {getPopular, getQuery} from './services/api.js';
 import {Card} from './components/card/card.js';
 
+const form = document.querySelector('.search');
+const searchInput = form.querySelector('.search__query');
 const popularContainer = document.querySelector('.popular__list');
 const popularButtons = popularContainer.querySelectorAll('.popular__item');
 const cardField = document.querySelector('.card-field');
+
+const searchQuery = async (e) => {
+  e.preventDefault();
+  const query = searchInput.value;
+
+  if(query != '') {
+    const data = await getQuery(query);
+
+    addCards(data);
+  }
+}
 
 const changePopularCategory = async (e) => {
   const target = e.target;
@@ -24,7 +37,7 @@ const addCards = (cards) => {
   cardField.innerHTML = '';
 
   cards.forEach(card => {
-    const itemName = card.name;
+    const itemName = card.name || card.title;
     const releaseDate = card.release_date || card.first_air_date;
     const posterPath = card.poster_path;
     const voteAverage = card.vote_average;
@@ -43,4 +56,5 @@ const baseLoading = async () => {
 
 baseLoading();
 
+form.addEventListener('submit', searchQuery);
 popularContainer.addEventListener('click', changePopularCategory);
