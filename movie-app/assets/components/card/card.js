@@ -1,17 +1,19 @@
 import { BaseComponent } from '../base-component.js';
 import { ImageComponent } from '../image-component/image-component.js';
+import { Popup } from '../popup/popup.js';
 import { Rating } from '../rating/rating.js';
 import { CardDate } from './card-date/card-date.js';
 import { CardTitle } from './card-title/card-title.js';
 
 export class Card extends BaseComponent {
-  constructor({itemName, releaseDate, posterPath, voteAverage}) {
+  constructor(itemName, releaseDate, posterPath, voteAverage, overview) {
     super('div', ['card']);
 
     this.itemName = itemName;
     this.releaseDate = releaseDate;
     this.posterPath = posterPath;
     this.voteAverage = voteAverage;
+    this.overview = overview;
   }
 
   create = () => {
@@ -31,6 +33,8 @@ export class Card extends BaseComponent {
     cardContainer.append(cardTitle.node, cardDate.node);
 
     this.addChildren([img.node, rating.node, cardContainer]);
+
+    this.node.addEventListener('click', this.showPopup);
   };
 
   transformDate = (date) => {
@@ -82,5 +86,15 @@ export class Card extends BaseComponent {
     }
 
     return `${month} ${day}, ${year}`;
+  }
+
+  showPopup = () => {
+    const popup = new Popup(
+      this.itemName,
+      this.releaseDate,
+      this.posterPath,
+      this.voteAverage,
+      this.overview);
+    popup.create();
   }
 }

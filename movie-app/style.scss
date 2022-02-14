@@ -408,7 +408,7 @@ input {
 
 .popup {
   position: fixed;
-  display: none;
+  display: block;
   top: 0;
   left: 0;
 
@@ -419,7 +419,7 @@ input {
   &__overlate {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 10;
   }
 
@@ -508,4 +508,8 @@ input {
 
 .high {
   color: var(--high--color);
+}
+
+.disable-scroll {
+  overflow-y: hidden;
 }
