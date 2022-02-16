@@ -1,1 +1,259 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  font-family: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.btn {
+  padding: 0;
+  font-family: inherit;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.header {
+  background-color: #2196f3;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24);
+}
+
+.header__wrapper {
+  padding: 15px 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__title {
+  color: #ffffff;
+  font-size: 2.1em;
+  line-height: 2.3em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+  .header__title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.header__btn {
+  position: relative;
+  padding: 7px 10px;
+  padding-left: 40px;
+  font-size: 1.4em;
+  line-height: 1.6em;
+  font-weight: 500;
+  border-radius: 5px;
+  color: #2196f3;
+  background-color: #ebf4fb;
+}
+
+.header__btn:hover {
+  background-color: #ffffff;
+}
+
+.header__btn::after {
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 30px;
+  height: 30px;
+  content: '';
+  background: url("src/assets/svg/score.svg") center no-repeat;
+  background-size: cover;
+  -webkit-filter: invert(57%) sepia(100%) saturate(439%) hue-rotate(164deg) brightness(100%) contrast(101%);
+          filter: invert(57%) sepia(100%) saturate(439%) hue-rotate(164deg) brightness(100%) contrast(101%);
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.logo__text {
+  padding: 3px 20px;
+  font-size: 1.1em;
+  line-height: 1.6em;
+  font-weight: 500;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.24);
+}
+
+.logo__text--bg {
+  color: #2196f3;
+  background-color: #ffffff;
+}
+
+.initial {
+  height: 82vh;
+}
+
+.footer {
+  background-color: #2196f3;
+}
+
+.footer__wrapper {
+  padding: 25px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__github {
+  padding-left: 45px;
+  display: block;
+  width: 120px;
+  height: 45px;
+  font-size: 16px;
+  line-height: 45px;
+  text-decoration: none;
+  color: #ffffff;
+  background-image: url("src/assets/svg/github.svg");
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer__github:hover {
+  background-size: 37px;
+}
+
+.footer__year {
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  font-size: 21px;
+  letter-spacing: -2px;
+  color: #ffffff;
+  line-height: 0.9em;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-filter: invert(180%);
+          filter: invert(180%);
+}
+
+.footer__rss {
+  display: block;
+  position: relative;
+  width: 86px;
+  height: 32px;
+  background-image: url("src/assets/svg/rs_school_js.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-right: 111px;
+  -webkit-filter: invert(180%);
+          filter: invert(180%);
+}
+
+.footer__rss:hover .footer__year {
+  right: -5px;
+  letter-spacing: 0;
+}
+/*# sourceMappingURL=style.css.map */

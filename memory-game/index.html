@@ -7,10 +7,46 @@
   <title>Memory game</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <header class="header">
+    <div class="header__wrapper wrapper">
+      <div class="logo header__logo">
+        <span class="logo__text">Match</span>
+        <span class="logo__text logo__text--bg">Match</span>
+      </div>
+      <h1 class="header__title">Memory game</h1>
+      <button class="header__btn btn">Best score</button>
+    </div>
+  </header>
+  <main>
+    <section class="initial">
+      <div class="initial__wrapper wrapper">
+        <button class="initial__btn initial__btn--start btn">Start game</button>
+        <button class="initial__btn initial__btn--score btn">Best score</button>
+      </div>
+    </section>
+    <section class="game">
+      <div class="game__wrapper wrapper">
+        <div class="game__field">
+          <div class="card">
+            <div class="card__front"></div>
+            <div class="card__back"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper wrapper">
+      <a class="footer__github" href="https://github.com/Eremor" target="_blank" rel="noopener noreferrer">Eremor</a>
+      <a class="footer__rss" href="https://rs.school/js/" target="_blank" rel="noopener">
+        <span class="footer__year">'22</span>
+      </a>
+    </div>
+  </footer>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
