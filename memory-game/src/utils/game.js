@@ -23,6 +23,9 @@ export const startGame = async () => {
 
 const newGame = (images) => {
   cleanCardField();
+  handlerCount(0);
+  stepCount = 0;
+  stepToFinish = TOTAL_CARDS;
 
   let totalImage = images.slice(0, TOTAL_CARDS);
   const cards = totalImage

@@ -1,5 +1,4 @@
 import { BestScore } from './src/components/popup/best-score/best-score.js';
-import { FinishPopup } from './src/components/popup/finish-popup/finish-popup.js';
 import { startGame } from './src/utils/game.js';
 import { getLocalStorage } from './src/utils/storage.js';
 
