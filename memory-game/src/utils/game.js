@@ -1,4 +1,5 @@
 import { Card } from '../components/card/card.js';
+import { FinishPopup } from '../components/popup/finish-popup/finish-popup.js';
 import { addCards, cleanCardField } from './card-field.js'
 import { FLIP_DELAY, TOTAL_CARDS } from './constants.js';
 import { handlerCount } from './counter.js';
@@ -8,6 +9,9 @@ let isAnimation = false;
 let activeCard = undefined;
 let stepToFinish = TOTAL_CARDS;
 let stepCount = 0;
+
+const mainScreen = document.querySelector('.initial');
+const gameScreen = document.querySelector('.game');
 
 export const startGame = async () => {
   const res = await fetch('./src/assets/images.json');
@@ -32,7 +36,11 @@ const newGame = (images) => {
 }
 
 const endGame = () => {
+  const finishPopup = new FinishPopup();
+  document.body.append(finishPopup.node);
 
+  mainScreen.classList.remove('visually-hidden');
+  gameScreen.classList.add('visually-hidden');
 }
 
 const handlerCard = async (card) => {
@@ -78,4 +86,8 @@ const missMatchCard = async (activeCard, card) => {
 
   activeCard.cardFront.style.backgroundColor = 'transparent';
   card.cardFront.style.backgroundColor = 'transparent';
+}
+
+export const getStepCount = () => {
+  return stepCount;
 }
