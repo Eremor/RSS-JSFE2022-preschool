@@ -20,7 +20,7 @@ export class Rating extends BaseComponent {
 
     const ratingNumber = document.createElement('span');
     ratingNumber.classList.add('rating__number');
-    ratingNumber.textContent = `${this.rate}%`;
+    ratingNumber.textContent = `${Math.round(this.rate)}%`;
 
     this.handlerRatingCircle(this.rate, circleRating);
     
