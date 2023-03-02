@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrapper wrapper">
+      <form class="search">
+        <input class="search__query" type="text" placeholder="Search for a movie or TV show.....">
+        <button class="search__cancel btn visually-hidden" type="button"></button>
+        <button class="search__btn btn" type="submit"></button>
+      </form>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__wrapper wrapper">
+      <h1 class="visually-hidden">Movie app</h1>
+      <div class="popular">
+        <p class="popular__title">What&apos;s popular</p>
+        <ul class="popular__list">
+          <li class="popular__item popular__item--active" data-category="movie">Movies</li>
+          <li class="popular__item" data-category="tv">TV shows</li>
+        </ul>
+      </div>
+      <div class="card-field"></div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper wrapper">
+      <a class="footer__github" href="https://github.com/Eremor" target="_blank" rel="noopener noreferrer">Eremor</a>
+      <a class="footer__rss" href="https://rs.school/js/" target="_blank" rel="noopener">
+        <span class="footer__year">'22</span>
+      </a>
+    </div>
+  </footer>
+  <script type="module" src="assets/main.js"></script>
+</body>
+</html>
